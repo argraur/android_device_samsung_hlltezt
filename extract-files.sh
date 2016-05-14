@@ -1,7 +1,7 @@
 #!/bin/sh
 
 VENDOR=samsung
-DEVICE=hl3g
+DEVICE=hllte
 
 set -e
 

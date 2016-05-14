@@ -6,7 +6,7 @@ $(call inherit-product, device/samsung/smdk5260-common/device-common.mk)
 $(call inherit-product, vendor/cm/config/telephony.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := hl3g
+PRODUCT_RELEASE_NAME := hllte
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
@@ -16,14 +16,14 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 # Override build properties.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=hl3gxx \
-    TARGET_DEVICE=hl3g \
-    BUILD_FINGERPRINT="samsung/hl3gxx/hl3g:5.1.1/LMY47X/N750XXUDPA1:user/release-keys" \
-    PRIVATE_BUILD_DESC="hl3gxx-user 5.1.1 LMY47X N750XXUDPA1 release-keys"
+    PRODUCT_NAME=hlltexx \
+    TARGET_DEVICE=hllte \
+    BUILD_FINGERPRINT="samsung/hlltexx/hl3g:5.1.1/LMY47X/N750XXUDPA1:user/release-keys" \
+    PRIVATE_BUILD_DESC="hlltexx-user 5.1.1 LMY47X N750XXUDPA1 release-keys"
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := hllte
 PRODUCT_NAME := cm_hllte
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-N750
+PRODUCT_MODEL := SM-N7505
 PRODUCT_MANUFACTURER := samsung
