@@ -1,5 +1,5 @@
 # inherit from the proprietary version
--include vendor/samsung/hl3g/BoardConfigVendor.mk
+-include vendor/samsung/smdk5260/BoardConfigVendor.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := hllte
