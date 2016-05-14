@@ -20,8 +20,8 @@ $(call inherit-product, device/samsung/hllte/device.mk)
 
 # Overrides
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_hl3g
-PRODUCT_DEVICE := hl3g
+PRODUCT_NAME := full_hllte
+PRODUCT_DEVICE := hllte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N7505
 PRODUCT_MANUFACTURER := samsung
