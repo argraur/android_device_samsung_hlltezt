@@ -5,4 +5,6 @@ LOCAL_PATH := device/samsung/hllte
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/sbin/cbd:root/sbin/cbd
 
-
+# Ramdisk
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/rootdir/fstab.universal5260:root/fstab.universal5260 \
