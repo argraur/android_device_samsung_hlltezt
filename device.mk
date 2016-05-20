@@ -8,3 +8,4 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/rootdir/fstab.universal5260:root/fstab.universal5260 \
+     $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc \
