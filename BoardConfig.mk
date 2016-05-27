@@ -2,7 +2,7 @@
 -include vendor/samsung/smdk5260/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := hllte,hlltexx
+TARGET_OTA_ASSERT_DEVICE := hllte,hlltexx,hl3g
 
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod-exynos5260-hlltexx_00_defconfig
