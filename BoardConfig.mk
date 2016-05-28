@@ -11,7 +11,6 @@ TARGET_KERNEL_CONFIG := cyanogenmod-exynos5260-hlltexx_00_defconfig
 TARGET_RECOVERY_FSTAB := device/samsung/hllte/rootdir/fstab.universal5260
 
 # RIL
-#BOARD_RIL_CLASS := ../../../device/samsung/hllte/ril
 BOARD_MODEM_TYPE := xmm6360
 
 # Bluetooth
