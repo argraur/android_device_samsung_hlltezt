@@ -3,7 +3,8 @@ LOCAL_PATH := device/samsung/hllte
 
 # Radio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/sbin/cbd:root/sbin/cbd
+    $(LOCAL_PATH)/rootdir/sbin/cbd:root/sbin/cbd \
+    $(LOCAL_PATH)/lib/libsec-ril.so:system/lib/libsec-ril.so \
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
