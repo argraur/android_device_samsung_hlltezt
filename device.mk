@@ -9,3 +9,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/rootdir/fstab.universal5260:root/fstab.universal5260 \
      $(LOCAL_PATH)/rootdir/init.target.rc:root/init.target.rc \
+
+# Bluetooth
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
