@@ -18,6 +18,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device specific files
 $(call inherit-product, device/samsung/hllte/device.mk)
 
+# HLLTE vendor
+$(call inherit-product-if-exists, vendor/samsung/hllte/hllte-vendor.mk)
+
 # Overrides
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_hllte
