@@ -1,0 +1,23 @@
+# Bluetooth
+vendor/firmware/bcm4335_V0105.0586.hcd
+vendor/firmware/bcm4335_V0105.0586_wisol.hcd
+lib/libbt-vendor.so
+
+### Wifi
+etc/wifi/bcmdhd_apsta.bin
+etc/wifi/bcmdhd_ibss.bin
+etc/wifi/bcmdhd_mfg.bin
+etc/wifi/bcmdhd_sta.bin
+etc/wifi/cred.conf
+etc/wifi/nvram_mfg.txt
+etc/wifi/nvram_net.txt
+
+# NFC
+lib/hw/nfc_nci.universal5260.so
+vendor/firmware/sec_s3fnrn3_firmware.bin
+
+### RIL
+lib/libsec-ril.so
+
+### IR
+lib/hw/consumerir.default.so
