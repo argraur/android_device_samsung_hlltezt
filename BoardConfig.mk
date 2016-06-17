@@ -7,9 +7,6 @@ TARGET_OTA_ASSERT_DEVICE := hllte,hlltexx,hl3g
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod-exynos5260-hlltexx_00_defconfig
 
-# Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/hllte/rootdir/fstab.universal5260
-
 # RIL
 BOARD_MODEM_TYPE := xmm6360
 
