@@ -20,7 +20,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := hllte
-PRODUCT_NAME := cm_hllte
+PRODUCT_NAME := lineage_hllte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N7505
 PRODUCT_MANUFACTURER := samsung
