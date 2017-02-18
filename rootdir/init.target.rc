@@ -1,5 +1,10 @@
 on fs
 
+# Parse hardware revision (needs to happen before cbd starts)
+service modemloader /system/bin/modemloader
+    class core
+    oneshot
+
 # CBD
 service cpboot-daemon /sbin/cbd -d -txmm7160 -bh -mh -p 13
     class main
