@@ -22,6 +22,7 @@ service ril-daemon /system/bin/rild
     user root
     group radio cache inet misc audio log readproc wakelock qcom_diag
     disabled
+    onrestart restart cpboot-daemon
 
 on post-fs-data
 # Remove symlinks to avoid issues with migrate after nandroid restores
