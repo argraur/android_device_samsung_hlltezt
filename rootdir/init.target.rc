@@ -23,13 +23,12 @@ service ril-daemon /system/bin/rild
     group radio cache inet misc audio log readproc wakelock qcom_diag
     disabled
 
-on early-boot
+on post-fs-data
 # Remove symlinks to avoid issues with migrate after nandroid restores
 # Will be recreated at end of boot
     rm -r -d /data/data/com.android.providers.telephony/databases
     rm -r -d /data/data/com.android.providers.telephony/shared_prefs
 
-on property:dev.bootcomplete=1
 # Symlink directories to access telephony.db and preferred-apn.xml required by cbd
     symlink /data/user_de/0/com.android.providers.telephony/databases /data/data/com.android.providers.telephony/databases
     symlink /data/user_de/0/com.android.providers.telephony/shared_prefs /data/data/com.android.providers.telephony/shared_prefs
