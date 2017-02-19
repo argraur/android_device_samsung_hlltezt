@@ -4,12 +4,14 @@ on fs
 service modemloader /system/bin/modemloader
     class core
     oneshot
+    disabled
 
 # CBD
 service cpboot-daemon /sbin/cbd -d -txmm7160 -bh -mh -p 13
     class main
     user root
     group radio cache inet misc audio sdcard_rw log sdcard_r shell
+    disabled
 
 # RILD
 service ril-daemon /system/bin/rild
@@ -19,6 +21,7 @@ service ril-daemon /system/bin/rild
     socket rild-debug stream 660 radio system
     user root
     group radio cache inet misc audio log readproc wakelock qcom_diag
+    disabled
 
 on early-boot
 # Remove symlinks to avoid issues with migrate after nandroid restores
@@ -30,3 +33,6 @@ on property:dev.bootcomplete=1
 # Symlink directories to access telephony.db and preferred-apn.xml required by cbd
     symlink /data/user_de/0/com.android.providers.telephony/databases /data/data/com.android.providers.telephony/databases
     symlink /data/user_de/0/com.android.providers.telephony/shared_prefs /data/data/com.android.providers.telephony/shared_prefs
+    start modemloader
+    start cpboot-daemon
+    start ril-daemon
