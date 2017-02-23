@@ -16,7 +16,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit common device configuration
-(call inherit-product, device/samsung/smdk5260-common/device-common.mk)
+$(call inherit-product, device/samsung/smdk5260-common/device-common.mk)
 
 # Inherit device specific files
 $(call inherit-product, device/samsung/hlltezt/device.mk)
