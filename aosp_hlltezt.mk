@@ -19,16 +19,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 (call inherit-product, device/samsung/smdk5260-common/device-common.mk)
 
 # Inherit device specific files
-$(call inherit-product, device/samsung/hllte/device.mk)
+$(call inherit-product, device/samsung/hlltezt/device.mk)
 
 # HLLTE vendor
 $(call inherit-product-if-exists, vendor/samsung/hllte/hllte-vendor.mk)
 
 # Overrides
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := aosp_hllte
-PRODUCT_DEVICE := hllte
+PRODUCT_NAME := aosp_hlltezt
+PRODUCT_DEVICE := hlltezt
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-N7505
+PRODUCT_MODEL := SM-N7507
 PRODUCT_MANUFACTURER := samsung
 

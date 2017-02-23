@@ -1,5 +1,5 @@
 # Local Path
-LOCAL_PATH := device/samsung/hllte
+LOCAL_PATH := device/samsung/hlltezt
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
@@ -10,4 +10,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
 # Overlay 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/hllte/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/hlltezt/overlay

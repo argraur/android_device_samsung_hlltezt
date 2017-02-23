@@ -15,6 +15,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_hllte.mk \
+    $(LOCAL_DIR)/aosp_hlltezt.mk \
     $(LOCAL_DIR)/cos.mk \
-    $(LOCAL_DIR)/cos_hllte.mk
+    $(LOCAL_DIR)/cos_hlltezt.mk
